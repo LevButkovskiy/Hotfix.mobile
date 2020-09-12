@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController" customModule="VKTechMobile" customModuleProvider="target">
+            <connections>
+                <outlet property="baseView" destination="lDN-WL-ZBJ" id="BhH-ek-ciP"/>
+                <outlet property="bottomDescriptionConstaint" destination="b9H-aT-qXG" id="5JS-Ru-5T7"/>
+                <outlet property="createButton" destination="sq4-CK-POe" id="rfV-Pi-9QD"/>
+                <outlet property="descriptionLabel" destination="6Ec-dQ-rvY" id="jXr-au-6j4"/>
+                <outlet property="topDescriptionConstaint" destination="ywW-5M-8kV" id="nA5-mX-3nr"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lDN-WL-ZBJ">
+                    <rect key="frame" x="0.0" y="397" width="414" height="102.5"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DescriptionLabel" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Ec-dQ-rvY">
+                            <rect key="frame" x="32" y="16" width="350" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sq4-CK-POe">
+                            <rect key="frame" x="143" y="52.5" width="128" height="34"/>
+                            <color key="backgroundColor" red="0.28627450980000002" green="0.52549019610000003" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                            <inset key="contentEdgeInsets" minX="16" minY="8" maxX="16" maxY="8"/>
+                            <state key="normal" title="CreateButton">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="createButtonClick" destination="-1" eventType="touchDown" id="6Wn-RG-YAr"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="sq4-CK-POe" firstAttribute="top" secondItem="6Ec-dQ-rvY" secondAttribute="bottom" constant="16" id="Kgz-Tg-yg7"/>
+                        <constraint firstAttribute="bottom" secondItem="sq4-CK-POe" secondAttribute="bottom" constant="16" id="b9H-aT-qXG"/>
+                        <constraint firstAttribute="trailing" secondItem="6Ec-dQ-rvY" secondAttribute="trailing" constant="32" id="bLA-8p-Q0w"/>
+                        <constraint firstItem="sq4-CK-POe" firstAttribute="centerX" secondItem="lDN-WL-ZBJ" secondAttribute="centerX" id="lFW-Pl-xAL"/>
+                        <constraint firstItem="6Ec-dQ-rvY" firstAttribute="leading" secondItem="lDN-WL-ZBJ" secondAttribute="leading" constant="32" id="v5O-vN-Y5C"/>
+                        <constraint firstItem="6Ec-dQ-rvY" firstAttribute="top" secondItem="lDN-WL-ZBJ" secondAttribute="top" constant="16" id="ywW-5M-8kV"/>
+                    </constraints>
+                    <edgeInsets key="layoutMargins" top="32" left="48" bottom="32" right="48"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="lDN-WL-ZBJ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Rj6-lS-Vm7"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="lDN-WL-ZBJ" secondAttribute="trailing" id="VKU-T1-hbu"/>
+                <constraint firstItem="lDN-WL-ZBJ" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="qhD-ah-g9F"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="137.68115942028987" y="120.53571428571428"/>
+        </view>
+    </objects>
+</document>
